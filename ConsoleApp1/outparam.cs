@@ -17,7 +17,7 @@ namespace ConsoleApp1
 
             product = a * b;
 
-
+            product = a * b;
         }
 
        
