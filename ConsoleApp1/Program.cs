@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.NetworkInformation;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -36,7 +37,6 @@ namespace ConsoleApp1
 
             #endregion
 
-
             #region out param
 
             //by using out param we can writ multiple return's for a single method
@@ -65,7 +65,6 @@ namespace ConsoleApp1
             //arrayparam.parray("satish","reddy","mallidi");
 
             #endregion
-
 
             #region encapsulation
 
@@ -101,7 +100,6 @@ namespace ConsoleApp1
 
             #endregion
 
-
             #region for loop
 
             //int i=0;
@@ -122,9 +120,54 @@ namespace ConsoleApp1
             //}
             #endregion
 
-            //changes
+            #region reverse & palendrome 
 
-            Console.ReadLine();
+            //string str, revstring = "";
+            //Console.WriteLine("enter string");
+            //str = Console.ReadLine();
+            //str = str.ToLower();
+            //for (int i = str.Length - 1; i >= 0; i--)
+            //{
+            //    revstring = revstring + str[i];
+            //}
+
+            //Console.WriteLine("reverse string : {0} ", revstring);
+            //if (str == revstring)
+            //{
+            //    Console.WriteLine("\nstring is palindrome");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("\nstring is not palindrome");
+            //}
+
+            //Console.ReadLine();
+
+            #endregion
+
+            #region no of words
+            ////ask user to enter sentence
+            //Console.WriteLine("enter a sentence:");
+            ////read the sentence
+            //string sentence = Console.ReadLine();
+            ////split the setence and storein word
+            //string[] words = sentence.Split(' ');
+            ////count the words
+            //int countwords = words.Length;
+            ////print the counted words
+            //Console.WriteLine("no of words in sentence :" + countwords);
+            //Console.ReadLine();
+            #endregion
+
+
+
+
+
+
+
+
+
+
         }
     }
 }
