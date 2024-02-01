@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Net.NetworkInformation;
 using System.Text;
@@ -158,6 +157,30 @@ namespace ConsoleApp1
             //Console.WriteLine("no of words in sentence :" + countwords);
             //Console.ReadLine();
             #endregion
+
+            #region find duplicate characters
+
+            Console.WriteLine("enter the string :");
+
+            string str = Console.ReadLine();
+
+            var groups = str.GroupBy(c => c).Where(g => g.Count() > 1);
+
+            if (groups.Count() > 0)
+            {
+                foreach (var group in groups)
+                {
+                    Console.WriteLine($"{group.Key}-{group.Count()}");
+                }
+            }
+            else
+            {
+                Console.WriteLine("there is no duplicates :");
+            }
+
+            #endregion
+
+
 
 
 
